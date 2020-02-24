@@ -25,6 +25,9 @@ react-native link react-native-draw-view
 
 Note: For iOS, if you're using CocoaPod, remember to `cd ios && pod install` after link. Or you can manual link [follow this instruction](https://facebook.github.io/react-native/docs/linking-libraries-ios).
 
+**Important for iOS:**
+Because the source code is written in Swift, so if your project doesn't include any .swift file, please open your project in XCode, create a file `anyname.swift`, accept to create the bridging header, then just leave it empty is ok.
+
 ## Usage
 
 ```javascript
