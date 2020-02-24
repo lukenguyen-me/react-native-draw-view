@@ -1,5 +1,3 @@
-import { NativeModules } from 'react-native';
-
-const { DrawView } = NativeModules;
+import DrawView from './src/DrawView';
 
 export default DrawView;
