@@ -49,7 +49,7 @@ public class DrawView extends View {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(4);
+        mPaint.setStrokeWidth(2);
     }
 
     public void reset() {

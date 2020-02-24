@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class DrawView: UIView {
-  @objc var color: String = ""
+  @objc var color: String = "#000000"
   @objc var strokeWidth: NSNumber = 1
   @objc var onSaved: RCTDirectEventBlock?
   @objc var onError: RCTDirectEventBlock?

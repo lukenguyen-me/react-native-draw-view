@@ -22,7 +22,7 @@ class DrawView extends React.PureComponent {
   }
 
   reset() {
-    const command = Platform.OS === 'ios' ? UIManager.DrawerView.Commands.reset : COMMAND_RESET;
+    const command = Platform.OS === 'ios' ? UIManager.DrawView.Commands.reset : COMMAND_RESET;
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.drawerRef.current),
       command,
@@ -31,7 +31,7 @@ class DrawView extends React.PureComponent {
   }
 
   save() {
-    const command = Platform.OS === 'ios' ? UIManager.DrawerView.Commands.save : COMMAND_SAVE;
+    const command = Platform.OS === 'ios' ? UIManager.DrawView.Commands.save : COMMAND_SAVE;
     UIManager.dispatchViewManagerCommand(
       findNodeHandle(this.drawerRef.current),
       command,

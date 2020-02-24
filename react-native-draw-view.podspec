@@ -9,12 +9,12 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   react-native-draw-view
                    DESC
-  s.homepage     = "https://github.com/github_account/react-native-draw-view"
+  s.homepage     = "https://github.com/phucloc8697/react-native-draw-view"
   s.license      = "MIT"
   # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.authors      = { "Your Name" => "yourname@email.com" }
+  s.authors      = { "Loc Nguyen" => "phucloc8697@gmail.com" }
   s.platforms    = { :ios => "9.0" }
-  s.source       = { :git => "https://github.com/github_account/react-native-draw-view.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/phucloc8697/react-native-draw-view.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
