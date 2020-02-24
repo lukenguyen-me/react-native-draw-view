@@ -11,6 +11,7 @@ import UIKit
 
 class DrawView: UIView {
   @objc var color: String = ""
+  @objc var strokeWidth: NSNumber = 1
   @objc var onSaved: RCTDirectEventBlock?
   @objc var onError: RCTDirectEventBlock?
 
@@ -90,7 +91,7 @@ private extension DrawView {
     context.setLineCap(.round)
     context.setBlendMode(.normal)
     context.setStrokeColor(hexToColor(color).cgColor)
-    context.setLineWidth(1.0)
+    context.setLineWidth(CGFloat(truncating: strokeWidth))
     
     context.strokePath()
     

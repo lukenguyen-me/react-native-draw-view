@@ -5,29 +5,6 @@ const RCTCustomView = requireNativeComponent('DrawView');
 const COMMAND_RESET = 1;
 const COMMAND_SAVE = 2;
 
-const styles = StyleSheet.create({
-  container: {
-    position: 'relative',
-  },
-  mask: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    opacity: 0.6,
-    backgroundColor: '#fff',
-  },
-  drawer: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-  },
-});
-
-
 class DrawView extends React.PureComponent {
   drawerRef;
 
@@ -63,18 +40,12 @@ class DrawView extends React.PureComponent {
   }
 
   render() {
-    const { style, color, onSaved, onError, disabled } = this.props;
-    return <View style={{ ...styles.container, ...style }}>
-      <RCTCustomView
-        ref={this.drawerRef}
-        style={styles.drawer}
-        color={color}
-        onSaved={onSaved}
-        onError={onError}
-      />
-      {disabled && <View style={styles.mask} />}
-
-    </View>;
+    const { style, ...rest } = this.props;
+    return <RCTCustomView
+      ref={this.drawerRef}
+      style={style}
+      {...rest}
+    />
   }
 
 }

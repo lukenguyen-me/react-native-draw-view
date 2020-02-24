@@ -18,10 +18,4 @@ public class DrawViewModule extends ReactContextBaseJavaModule {
     public String getName() {
         return "DrawView";
     }
-
-    @ReactMethod
-    public void sampleMethod(String stringArgument, int numberArgument, Callback callback) {
-        // TODO: Implement some actually useful functionality
-        callback.invoke("Received numberArgument: " + numberArgument + " stringArgument: " + stringArgument);
-    }
 }
