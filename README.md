@@ -1,5 +1,9 @@
 # react-native-draw-view
 
+[![npm](https://img.shields.io/npm/v/react-native-draw-view.svg)](https://www.npmjs.com/package/react-native-draw-view)
+[![Downloads](https://img.shields.io/npm/dm/react-native-draw-view.svg)](https://www.npmjs.com/package/react-native-draw-view)
+[![MIT License](https://img.shields.io/npm/l/react-native-draw-view.svg)](http://opensource.org/licenses/MIT)
+
 A React Native component for free-hand drawing on both iOS and Android.
 
 ## Features

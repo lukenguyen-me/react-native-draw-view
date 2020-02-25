@@ -1,7 +1,7 @@
 {
   "name": "react-native-draw-view",
   "title": "React Native Draw View",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provice a native UI component to draw onto.",
   "main": "index.js",
   "scripts": {
