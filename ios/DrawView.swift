@@ -140,7 +140,7 @@ extension DrawView {
         if let onSaved = onSaved {
           onSaved([
             "uri": fileURL.absoluteString,
-            "type": "images/png",
+            "mimetype": "image/png",
             "name": "draw.png",
             "size": data.count,
           ])

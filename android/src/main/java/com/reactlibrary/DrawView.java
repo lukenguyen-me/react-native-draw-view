@@ -90,7 +90,7 @@ public class DrawView extends View {
             WritableMap event = Arguments.createMap();
             event.putString("uri", Uri.fromFile(file).toString());
             event.putString("name", fileName);
-            event.putString("type", "images/png");
+            event.putString("mimetype", "image/png");
             event.putInt("size", (int) file.length());
             onSaved(event);
         } catch (java.io.IOException e) {

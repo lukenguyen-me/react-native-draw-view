@@ -76,7 +76,7 @@ Here are the `props` of the the component:
 | `strokeWidth` | `Number` | `1` | The stroke thickness, in pixels. |
 | `style` | Style object | `null` | Some `View` styles if you need. |
 | `onRef` | Function | `null` | Bind draw view's ref to your variable. |
-| `onSaved` | Function | `null` | Event called after the draw's saved successfully. The return value is an object `res` which `res.nativeEvent` include file's information: uri, type, size, name. |
+| `onSaved` | Function | `null` | Event called after the draw's saved successfully. The return value is an object `res` which `res.nativeEvent` include file's information: uri, mimetype, size, name. |
 | `onError` | Function | `null` | Event called if there is error. The return value is an object `err` which `err.nativeEvent` include `message` of that error. |
 
 The component also has some instance methods:
